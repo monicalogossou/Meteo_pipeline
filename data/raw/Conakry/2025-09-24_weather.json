@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Conakry",
+    "region": "Conakry",
+    "country": "Guinea",
+    "lat": 9.5092,
+    "lon": -13.7122,
+    "tz_id": "Africa/Conakry",
+    "localtime_epoch": 1758725472,
+    "localtime": "2025-09-24 14:51"
+  },
+  "current": {
+    "last_updated_epoch": 1758725100,
+    "last_updated": "2025-09-24 14:45",
+    "temp_c": 26.1,
+    "temp_f": 79.0,
+    "is_day": 1,
+    "condition": {
+      "text": "Light rain",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/296.png",
+      "code": 1183
+    },
+    "wind_mph": 9.8,
+    "wind_kph": 15.8,
+    "wind_degree": 295,
+    "wind_dir": "WNW",
+    "pressure_mb": 1012.0,
+    "pressure_in": 29.88,
+    "precip_mm": 0.0,
+    "precip_in": 0.0,
+    "humidity": 84,
+    "cloud": 75,
+    "feelslike_c": 28.7,
+    "feelslike_f": 83.7,
+    "windchill_c": 25.9,
+    "windchill_f": 78.7,
+    "heatindex_c": 28.5,
+    "heatindex_f": 83.2,
+    "dewpoint_c": 22.3,
+    "dewpoint_f": 72.1,
+    "vis_km": 8.0,
+    "vis_miles": 4.0,
+    "uv": 10.0,
+    "gust_mph": 15.8,
+    "gust_kph": 25.4,
+    "short_rad": 887.88,
+    "diff_rad": 325.73,
+    "dni": 601.73,
+    "gti": 862.34
+  }
+}

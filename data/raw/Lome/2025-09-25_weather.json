@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Lom\u00e9",
+    "region": "Maritime",
+    "country": "Aller",
+    "lat": 6.1319,
+    "lon": 1.2228,
+    "tz_id": "Africa/Lome",
+    "localtime_epoch": 1758815982,
+    "localtime": "2025-09-25 15:59"
+  },
+  "current": {
+    "last_updated_epoch": 1758815100,
+    "last_updated": "2025-09-25 15:45",
+    "temp_c": 27.0,
+    "temp_f": 80.6,
+    "is_day": 1,
+    "condition": {
+      "text": "Patchy rain nearby",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+      "code": 1063
+    },
+    "wind_mph": 12.3,
+    "wind_kph": 19.8,
+    "wind_degree": 204,
+    "wind_dir": "SSW",
+    "pressure_mb": 1011.0,
+    "pressure_in": 29.86,
+    "precip_mm": 0.02,
+    "precip_in": 0.0,
+    "humidity": 76,
+    "cloud": 73,
+    "feelslike_c": 29.8,
+    "feelslike_f": 85.7,
+    "windchill_c": 27.0,
+    "windchill_f": 80.6,
+    "heatindex_c": 29.8,
+    "heatindex_f": 85.7,
+    "dewpoint_c": 22.4,
+    "dewpoint_f": 72.2,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 4.5,
+    "gust_mph": 16.6,
+    "gust_kph": 26.8,
+    "short_rad": 588.38,
+    "diff_rad": 271.55,
+    "dni": 480.91,
+    "gti": 581.49
+  }
+}

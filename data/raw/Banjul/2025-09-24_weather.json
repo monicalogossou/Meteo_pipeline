@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Banjul",
+    "region": "Banjul",
+    "country": "Gambia",
+    "lat": 13.4531,
+    "lon": -16.5775,
+    "tz_id": "Africa/Banjul",
+    "localtime_epoch": 1758726023,
+    "localtime": "2025-09-24 15:00"
+  },
+  "current": {
+    "last_updated_epoch": 1758726000,
+    "last_updated": "2025-09-24 15:00",
+    "temp_c": 25.1,
+    "temp_f": 77.2,
+    "is_day": 1,
+    "condition": {
+      "text": "Patchy light rain with thunder",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/386.png",
+      "code": 1273
+    },
+    "wind_mph": 11.2,
+    "wind_kph": 18.0,
+    "wind_degree": 205,
+    "wind_dir": "SSW",
+    "pressure_mb": 1015.0,
+    "pressure_in": 29.97,
+    "precip_mm": 0.01,
+    "precip_in": 0.0,
+    "humidity": 100,
+    "cloud": 50,
+    "feelslike_c": 27.1,
+    "feelslike_f": 80.7,
+    "windchill_c": 27.1,
+    "windchill_f": 80.8,
+    "heatindex_c": 30.2,
+    "heatindex_f": 86.3,
+    "dewpoint_c": 22.7,
+    "dewpoint_f": 72.9,
+    "vis_km": 8.0,
+    "vis_miles": 4.0,
+    "uv": 5.5,
+    "gust_mph": 16.8,
+    "gust_kph": 27.0,
+    "short_rad": 300.74,
+    "diff_rad": 178.4,
+    "dni": 146.28,
+    "gti": 288.52
+  }
+}

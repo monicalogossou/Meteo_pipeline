@@ -1,0 +1,4 @@
+name: weather_project   # 👈 Doit correspondre à ce que tu as mis dans profiles.yml
+version: '1.0'
+profile: weather_project
+...

@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Ouagadougou",
+    "region": "Kadiogo",
+    "country": "Burkina Faso",
+    "lat": 12.3703,
+    "lon": -1.5247,
+    "tz_id": "Africa/Ouagadougou",
+    "localtime_epoch": 1758814659,
+    "localtime": "2025-09-25 15:37"
+  },
+  "current": {
+    "last_updated_epoch": 1758814200,
+    "last_updated": "2025-09-25 15:30",
+    "temp_c": 24.2,
+    "temp_f": 75.6,
+    "is_day": 1,
+    "condition": {
+      "text": "Patchy light rain with thunder",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/386.png",
+      "code": 1273
+    },
+    "wind_mph": 5.6,
+    "wind_kph": 9.0,
+    "wind_degree": 128,
+    "wind_dir": "SE",
+    "pressure_mb": 1014.0,
+    "pressure_in": 29.94,
+    "precip_mm": 0.0,
+    "precip_in": 0.0,
+    "humidity": 94,
+    "cloud": 25,
+    "feelslike_c": 24.7,
+    "feelslike_f": 76.5,
+    "windchill_c": 34.4,
+    "windchill_f": 93.9,
+    "heatindex_c": 36.2,
+    "heatindex_f": 97.1,
+    "dewpoint_c": 17.7,
+    "dewpoint_f": 63.9,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 4.9,
+    "gust_mph": 6.4,
+    "gust_kph": 10.4,
+    "short_rad": 830.7,
+    "diff_rad": 152.07,
+    "dni": 998.99,
+    "gti": 778.97
+  }
+}

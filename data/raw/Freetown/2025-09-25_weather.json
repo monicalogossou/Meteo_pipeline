@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Freetown",
+    "region": "Western Area",
+    "country": "Sierra Leone",
+    "lat": 8.49,
+    "lon": -13.2342,
+    "tz_id": "Africa/Freetown",
+    "localtime_epoch": 1758815385,
+    "localtime": "2025-09-25 15:49"
+  },
+  "current": {
+    "last_updated_epoch": 1758815100,
+    "last_updated": "2025-09-25 15:45",
+    "temp_c": 27.3,
+    "temp_f": 81.1,
+    "is_day": 1,
+    "condition": {
+      "text": "Light rain shower",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png",
+      "code": 1240
+    },
+    "wind_mph": 5.6,
+    "wind_kph": 9.0,
+    "wind_degree": 218,
+    "wind_dir": "SW",
+    "pressure_mb": 1012.0,
+    "pressure_in": 29.89,
+    "precip_mm": 1.15,
+    "precip_in": 0.05,
+    "humidity": 76,
+    "cloud": 77,
+    "feelslike_c": 30.4,
+    "feelslike_f": 86.8,
+    "windchill_c": 27.3,
+    "windchill_f": 81.1,
+    "heatindex_c": 30.4,
+    "heatindex_f": 86.8,
+    "dewpoint_c": 22.8,
+    "dewpoint_f": 73.0,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 4.8,
+    "gust_mph": 9.4,
+    "gust_kph": 15.0,
+    "short_rad": 674.82,
+    "diff_rad": 225.58,
+    "dni": 549.62,
+    "gti": 657.37
+  }
+}

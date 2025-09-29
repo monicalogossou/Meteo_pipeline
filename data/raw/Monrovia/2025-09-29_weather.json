@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Monrovia",
+    "region": "Montserrado",
+    "country": "Liberia",
+    "lat": 6.3106,
+    "lon": -10.8047,
+    "tz_id": "Africa/Monrovia",
+    "localtime_epoch": 1759104022,
+    "localtime": "2025-09-29 00:00"
+  },
+  "current": {
+    "last_updated_epoch": 1759104000,
+    "last_updated": "2025-09-29 00:00",
+    "temp_c": 24.3,
+    "temp_f": 75.8,
+    "is_day": 0,
+    "condition": {
+      "text": "Light rain shower",
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/353.png",
+      "code": 1240
+    },
+    "wind_mph": 8.9,
+    "wind_kph": 14.4,
+    "wind_degree": 221,
+    "wind_dir": "SW",
+    "pressure_mb": 1015.0,
+    "pressure_in": 29.96,
+    "precip_mm": 2.28,
+    "precip_in": 0.09,
+    "humidity": 91,
+    "cloud": 100,
+    "feelslike_c": 26.8,
+    "feelslike_f": 80.3,
+    "windchill_c": 24.3,
+    "windchill_f": 75.8,
+    "heatindex_c": 26.8,
+    "heatindex_f": 80.3,
+    "dewpoint_c": 22.8,
+    "dewpoint_f": 73.0,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 0.0,
+    "gust_mph": 13.5,
+    "gust_kph": 21.8,
+    "short_rad": 0,
+    "diff_rad": 0,
+    "dni": 0,
+    "gti": 0
+  }
+}

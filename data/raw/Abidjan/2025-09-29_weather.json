@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Abidjan",
+    "region": "Lagunes",
+    "country": "Cote d'Ivoire",
+    "lat": 5.3411,
+    "lon": -4.0281,
+    "tz_id": "Africa/Abidjan",
+    "localtime_epoch": 1759104011,
+    "localtime": "2025-09-29 00:00"
+  },
+  "current": {
+    "last_updated_epoch": 1759103100,
+    "last_updated": "2025-09-28 23:45",
+    "temp_c": 25.1,
+    "temp_f": 77.2,
+    "is_day": 0,
+    "condition": {
+      "text": "Patchy rain nearby",
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+      "code": 1063
+    },
+    "wind_mph": 9.4,
+    "wind_kph": 15.1,
+    "wind_degree": 218,
+    "wind_dir": "SW",
+    "pressure_mb": 1015.0,
+    "pressure_in": 29.97,
+    "precip_mm": 0.04,
+    "precip_in": 0.0,
+    "humidity": 89,
+    "cloud": 25,
+    "feelslike_c": 27.6,
+    "feelslike_f": 81.7,
+    "windchill_c": 24.3,
+    "windchill_f": 75.8,
+    "heatindex_c": 26.6,
+    "heatindex_f": 79.8,
+    "dewpoint_c": 21.9,
+    "dewpoint_f": 71.4,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 0.0,
+    "gust_mph": 13.9,
+    "gust_kph": 22.4,
+    "short_rad": 0,
+    "diff_rad": 0,
+    "dni": 0,
+    "gti": 0
+  }
+}

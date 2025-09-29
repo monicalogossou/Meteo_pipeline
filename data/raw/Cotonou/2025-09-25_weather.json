@@ -1,0 +1,51 @@
+{
+  "location": {
+    "name": "Cotonou",
+    "region": "Littoral",
+    "country": "Benin",
+    "lat": 6.35,
+    "lon": 2.4333,
+    "tz_id": "Africa/Porto-Novo",
+    "localtime_epoch": 1758815983,
+    "localtime": "2025-09-25 16:59"
+  },
+  "current": {
+    "last_updated_epoch": 1758815100,
+    "last_updated": "2025-09-25 16:45",
+    "temp_c": 29.0,
+    "temp_f": 84.2,
+    "is_day": 1,
+    "condition": {
+      "text": "Patchy rain nearby",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+      "code": 1063
+    },
+    "wind_mph": 13.0,
+    "wind_kph": 20.9,
+    "wind_degree": 213,
+    "wind_dir": "SSW",
+    "pressure_mb": 1012.0,
+    "pressure_in": 29.88,
+    "precip_mm": 0.01,
+    "precip_in": 0.0,
+    "humidity": 79,
+    "cloud": 25,
+    "feelslike_c": 34.2,
+    "feelslike_f": 93.5,
+    "windchill_c": 26.4,
+    "windchill_f": 79.6,
+    "heatindex_c": 29.1,
+    "heatindex_f": 84.3,
+    "dewpoint_c": 22.2,
+    "dewpoint_f": 72.0,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 4.5,
+    "gust_mph": 17.3,
+    "gust_kph": 27.9,
+    "short_rad": 810.12,
+    "diff_rad": 190.7,
+    "dni": 758.77,
+    "gti": 796.97
+  }
+}

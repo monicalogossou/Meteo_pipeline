@@ -1,0 +1,134 @@
+version: "3.9"
+
+x-airflow-common:
+  &airflow-common
+  image: apache/airflow:2.8.1
+  environment:
+    &airflow-env
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    _AIRFLOW_WWW_USER_USERNAME: airflow
+    _AIRFLOW_WWW_USER_PASSWORD: airflow
+    AIRFLOW_UID: ${AIRFLOW_UID}
+    WEATHER_API_KEY: e098df917d934579bee144137252409 
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/logs:/opt/airflow/logs
+    - ./airflow/plugins:/opt/airflow/plugins
+    - ./api_fetcher:/opt/airflow/api_fetcher
+    - ./data:/data
+  depends_on:
+    - postgres
+    - redis
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: >
+      bash -c "airflow db migrate &&
+               airflow users create --username airflow --password airflow --firstname Airflow --lastname Admin --role Admin --email airflow@example.com"
+    restart: on-failure
+
+  webserver:
+    <<: *airflow-common
+    ports:
+      - "8080:8080"
+    command: webserver
+
+  worker:
+    <<: *airflow-common
+    command: celery worker
+    mem_limit: 1g
+    cpus: 0.75
+   
+
+  scheduler:
+    <<: *airflow-common
+    command: scheduler
+    mem_limit: 1g
+    cpus: 0.5
+  
+
+  flower:
+    <<: *airflow-common
+    command: celery flower
+    ports:
+      - "5555:5555"
+
+  minio:
+    image: minio/minio
+    container_name: minio
+    ports:
+      - "9000:9000"     # API
+      - "9001:9001"     # Console
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+
+  minio-init:
+    image: minio/mc
+    depends_on:
+      - minio
+    entrypoint: ["/bin/sh", "-c", "/init_minio.sh"]
+    volumes:
+      - ./init_minio.sh:/init_minio.sh
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.7.9
+    container_name: dbt
+    depends_on:
+      - postgres
+    environment:
+      DBT_PROFILES_DIR: /root/.dbt
+    volumes:
+      - ./dbt/dbt_project:/usr/app  # mon dossier dbt local
+      - ./dbt/profiles:/root/.dbt   # fichier profiles.yml
+    working_dir: /usr/app
+    stdin_open: true
+    tty: true
+    command: ["tail", "-f", "/dev/null"]
+    
+  
+  spark-job:
+    image: bitnami/spark:latest
+    container_name: spark-job
+    ports:
+      - "5000:5000"  # expose Flask API
+    volumes:
+      - ./spark:/app
+      - ./data:/data                # mes fichiers JSON sont ici
+      - spark_tmp:/tmp
+    working_dir: /app
+    environment:
+      - HOME=/tmp
+    command: python /app/main.py   
+    
+  
+volumes:
+  postgres_data:
+  minio_data:
+  data:
+  spark_tmp: 
